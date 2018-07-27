@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Contacts from './components/Contacts';
 
 /*
 Smart Component
@@ -30,6 +31,7 @@ function App() {
 const App = () => (
   <div>
     Hello
+    <Contacts />
   </div>
 );
 
