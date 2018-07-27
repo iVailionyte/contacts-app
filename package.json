@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/marcobiedermann/contacts-app/issues"
   },
-  "homepage": "https://github.com/marcobiedermann/contacts-app#readme"
+  "homepage": "https://github.com/marcobiedermann/contacts-app#readme",
+  "devDependencies": {
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
 }
