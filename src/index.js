@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Contacts from './components/Contacts';
+import App from './components/App';
 
 /*
 Smart Component
@@ -28,11 +28,6 @@ function App() {
 }
 */
 
-const App = () => (
-  <div>
-    Hello
-    <Contacts />
-  </div>
-);
+
 
 render(<App />, document.getElementById('root'));

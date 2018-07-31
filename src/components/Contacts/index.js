@@ -1,8 +1,9 @@
 import React from 'react';
+import Contact from '../Contact';
 
 const Contacts = () => (
   <div>
-    Contacts list goes here
+    <Contact />
   </div>
 );
 
