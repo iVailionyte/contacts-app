@@ -1,8 +1,10 @@
 import React from 'react';
+import uuidv4 from 'uuid/v4';
 import Contacts from '../Contacts';
 
 const contacts = [
   {
+    id: uuidv4(),
     firstname: 'Jane',
     lastname: 'Janny',
     street: 'Street',
@@ -13,6 +15,7 @@ const contacts = [
     email: 'ahsbsdjd@jskw',
   },
   {
+    id: uuidv4(),
     firstname: 'John',
     lastname: 'Janny',
     street: 'Street',
@@ -23,6 +26,7 @@ const contacts = [
     email: 'ahsbsdjd@jskw',
   },
   {
+    id: uuidv4(),
     firstname: 'John',
     lastname: 'Janny',
     street: 'Street',
