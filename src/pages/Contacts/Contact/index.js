@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => (
   <div>
-    Contact single page
+    <Link to="/contacts/contact/edit">Contact single page</Link>
   </div>
 );
 
