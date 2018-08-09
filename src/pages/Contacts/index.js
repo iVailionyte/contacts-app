@@ -6,6 +6,6 @@ const ContactsPage = () => (
   <div>
     <Contacts contacts={contacts} />
   </div>
-)
+);
 
 export default ContactsPage;
