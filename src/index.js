@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Contacts from './components/Contacts';
 import Layout from './components/Layout';
-import contacts from './data/contacts';
+import ContactsPage from './pages/Contacts';
 
-render(<Layout><Contacts contacts={contacts} /></Layout>, document.getElementById('root'));
+render(<Layout><ContactsPage /></Layout>, document.getElementById('root'));
