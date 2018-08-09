@@ -13,6 +13,11 @@ const Navigation = () => (
         Contacts
       </Link>
     </li>
+    <li>
+      <Link to="/new">
+        New
+      </Link>
+    </li>
   </ul>
 );
 
