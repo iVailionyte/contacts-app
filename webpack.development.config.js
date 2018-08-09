@@ -1,6 +1,7 @@
 module.exports = {
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    contentBase: 'src',
   },
   devtool: 'cheap-module-source-map',
   mode: 'development',
