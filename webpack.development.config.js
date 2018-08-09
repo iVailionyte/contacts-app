@@ -1,4 +1,7 @@
 module.exports = {
+  devServer: {
+    historyApiFallback: true
+  },
   devtool: 'cheap-module-source-map',
   mode: 'development',
   module: {

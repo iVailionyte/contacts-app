@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Layout from './components/Layout';
-import ContactsPage from './pages/Contacts';
+import Root from './components/Root';
 
-render(<Layout><ContactsPage /></Layout>, document.getElementById('root'));
+render(<Root />, document.getElementById('root'));
