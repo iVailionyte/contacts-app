@@ -12,8 +12,8 @@ const Root = () => (
     <Layout>
       <Route path="/" component={IndexPage} exact />
       <Route path="/contacts" component={ContactsPage} exact />
-      <Route path='/contacts/contact' component={ContactPage} exact />
-      <Route path='/contacts/contact/edit' component={EditPage} />
+      <Route path="/contacts/contact" component={ContactPage} exact />
+      <Route path="/contacts/contact/edit" component={EditPage} />
       <Route path="/new" component={NewPage} />
     </Layout>
   </BrowserRouter>

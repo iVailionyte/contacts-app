@@ -2,17 +2,41 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Contact = (props) => (
+const Contact = ({
+  firstname,
+  lastname,
+  street,
+  zip,
+  city,
+  country,
+  phone,
+  email,
+}) => (
   <div>
-    <h1><Link to="/contacts/contact">{props.firstname} {props.lastname}</Link></h1>
-    <address>{props.street}<br />{props.zip} {props.city}<br />{props.country}</address>
-    {props.phone || props.email && (
+    <h1>
+      <Link to="/contacts/contact">
+        {firstname}
+        {' '}
+        {lastname}
+      </Link>
+
+    </h1>
+    <address>
+      {street}
+      <br />
+      {zip}
+      {' '}
+      {city}
+      <br />
+      {country}
+    </address>
+    {(phone || email) && (
       <ul>
-        {props.phone && (
-          <li>{props.phone}</li>
+        {phone && (
+          <li>{phone}</li>
         )}
-        {props.email && (
-          <li>{props.email}</li>
+        {email && (
+          <li>{email}</li>
         )}
       </ul>
     )}

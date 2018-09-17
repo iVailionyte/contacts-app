@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Main = (props) => (
+const Main = ({ children }) => (
   <main>
-    {props.children}
+    {children}
   </main>
 );
 

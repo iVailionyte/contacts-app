@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Contact from '../Contact';
 
-const Contacts = (props) => (
+const Contacts = ({ contacts }) => (
   <div>
-    {props.contacts.map(contact => (
+    {contacts.map(contact => (
       <Contact key={contact.id} {...contact} />
     ))}
   </div>

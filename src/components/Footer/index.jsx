@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Footer = (props) => (
+const Footer = ({ children }) => (
   <footer>
-    {props.children}
+    {children}
   </footer>
 );
 

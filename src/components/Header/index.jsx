@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import './style.css';
 
-const Header = (props) => (
+const Header = ({ children }) => (
   <header className="header">
-    {props.children}
+    {children}
   </header>
 );
 

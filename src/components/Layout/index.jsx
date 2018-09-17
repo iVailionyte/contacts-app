@@ -5,13 +5,13 @@ import Footer from '../Footer';
 import Main from '../Main';
 import Navigation from '../Navigation';
 
-const Layout = (props) => (
+const Layout = ({ children }) => (
   <div>
     <Header>
       <Navigation />
     </Header>
     <Main>
-      {props.children}
+      {children}
     </Main>
     <Footer>Copyright information</Footer>
   </div>
