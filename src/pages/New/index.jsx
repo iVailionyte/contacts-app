@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import uuidv4 from 'uuid/v4';
+import Label from '../../components/Label';
 
 class NewPage extends Component {
   constructor(props) {
@@ -38,35 +39,35 @@ class NewPage extends Component {
       <div>
         <form onSubmit={this.submitHandler}>
           <div>
-            <label htmlFor="firstname">Firstname</label>
+            <Label htmlFor="firstname">Firstname</Label>
             <input id="firstname" type="text" name="firstname" value={this.state.firstname} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="lastname">Lastname</label>
+            <Label htmlFor="lastname">Lastname</Label>
             <input id="lastname" type="text" name="lastname" value={this.state.lastname} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="street">Street</label>
+            <Label htmlFor="street">Street</Label>
             <input id="street" type="text" name="street" value={this.state.street} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="zip">Zip</label>
+            <Label htmlFor="zip">Zip</Label>
             <input id="zip" type="text" name="zip" value={this.state.zip} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="city">City</label>
+            <Label htmlFor="city">City</Label>
             <input id="city" type="text" name="city" value={this.state.city} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="country">Country</label>
+            <Label htmlFor="country">Country</Label>
             <input id="country" type="text" name="country" value={this.state.country} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="phone">Phone</label>
+            <Label htmlFor="phone">Phone</Label>
             <input id="phone" type="tel" name="phone" value={this.state.phone} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
+            <Label htmlFor="email">Email</Label>
             <input id="email" type="email" name="email" value={this.state.email} onChange={this.changeHandler} />
           </div>
           <div>
