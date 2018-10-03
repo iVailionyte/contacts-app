@@ -15,6 +15,22 @@ class Root extends Component {
     this.state = {
       contacts,
     };
+
+    this.addContact = this.addContact.bind(this);
+  }
+
+  addContact(newContact) {
+    this.setState({
+      contacts: [...this.state.contacts, newContact]
+    })
+  }
+
+  updateContact() {
+
+  }
+
+  deleteContact() {
+
   }
 
   render() {
@@ -25,7 +41,7 @@ class Root extends Component {
           <Route path="/contacts" component={() => <ContactsPage contacts={this.state.contacts} />} exact />
           <Route path="/contacts/contact" component={ContactPage} exact />
           <Route path="/contacts/contact/edit" component={EditPage} />
-          <Route path="/new" component={NewPage} />
+          <Route path="/new" component={() => <NewPage addContact={this.addContact} />} />
         </Layout>
       </BrowserRouter>
     );

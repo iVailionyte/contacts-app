@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import uuidv4 from 'uuid/v4';
 
 class NewPage extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      id: uuidv4(),
       firstname: '',
       lastname: '',
       street: '',
@@ -15,6 +18,7 @@ class NewPage extends Component {
       email: '',
     };
     this.changeHandler = this.changeHandler.bind(this);
+    this.submitHandler = this.submitHandler.bind(this);
   }
 
   changeHandler(event) {
@@ -23,10 +27,16 @@ class NewPage extends Component {
     });
   }
 
+  submitHandler(event) {
+    event.preventDefault();
+    this.props.addContact(this.state);
+    this.props.history.push('/contacts');
+  }
+
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.submitHandler} >
           <div>
             <label htmlFor="">Firstname</label>
             <input type="text" name="firstname" value={this.state.firstname} onChange={this.changeHandler} />
@@ -68,4 +78,4 @@ class NewPage extends Component {
   }
 }
 
-export default NewPage;
+export default withRouter(NewPage);
