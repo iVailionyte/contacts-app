@@ -2,9 +2,9 @@ import React from 'react';
 import Contacts from '../../components/Contacts';
 import contacts from '../../data/contacts';
 
-const ContactsPage = () => (
+const ContactsPage = props => (
   <div>
-    <Contacts contacts={contacts} />
+    <Contacts contacts={props.contacts} />
   </div>
 );
 
