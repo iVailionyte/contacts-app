@@ -21,8 +21,8 @@ class Root extends Component {
 
   addContact(newContact) {
     this.setState({
-      contacts: [...this.state.contacts, newContact]
-    })
+      contacts: [...this.state.contacts, newContact],
+    });
   }
 
   updateContact() {

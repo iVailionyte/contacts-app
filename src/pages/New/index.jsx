@@ -36,38 +36,38 @@ class NewPage extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.submitHandler} >
+        <form onSubmit={this.submitHandler}>
           <div>
-            <label htmlFor="">Firstname</label>
-            <input type="text" name="firstname" value={this.state.firstname} onChange={this.changeHandler} />
+            <label htmlFor="firstname">Firstname</label>
+            <input id="firstname" type="text" name="firstname" value={this.state.firstname} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="">Lastname</label>
-            <input type="text" name="lastname" value={this.state.lastname} onChange={this.changeHandler} />
+            <label htmlFor="lastname">Lastname</label>
+            <input id="lastname" type="text" name="lastname" value={this.state.lastname} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="">Street</label>
-            <input type="text" name="street" value={this.state.street} onChange={this.changeHandler} />
+            <label htmlFor="street">Street</label>
+            <input id="street" type="text" name="street" value={this.state.street} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="">Zip</label>
-            <input type="text" name="zip" value={this.state.zip} onChange={this.changeHandler} />
+            <label htmlFor="zip">Zip</label>
+            <input id="zip" type="text" name="zip" value={this.state.zip} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="">City</label>
-            <input type="text" name="city" value={this.state.city} onChange={this.changeHandler} />
+            <label htmlFor="city">City</label>
+            <input id="city" type="text" name="city" value={this.state.city} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="">Country</label>
-            <input type="text" name="country" value={this.state.country} onChange={this.changeHandler} />
+            <label htmlFor="country">Country</label>
+            <input id="country" type="text" name="country" value={this.state.country} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="">Phone</label>
-            <input type="tel" name="phone" value={this.state.phone} onChange={this.changeHandler} />
+            <label htmlFor="phone">Phone</label>
+            <input id="phone" type="tel" name="phone" value={this.state.phone} onChange={this.changeHandler} />
           </div>
           <div>
-            <label htmlFor="">Email</label>
-            <input type="email" name="email" value={this.state.email} onChange={this.changeHandler} />
+            <label htmlFor="email">Email</label>
+            <input id="email" type="email" name="email" value={this.state.email} onChange={this.changeHandler} />
           </div>
           <div>
             <input type="submit" />
