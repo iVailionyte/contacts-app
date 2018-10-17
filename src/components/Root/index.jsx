@@ -39,8 +39,8 @@ class Root extends Component {
         <Layout>
           <Route path="/" component={IndexPage} exact />
           <Route path="/contacts" component={() => <ContactsPage contacts={this.state.contacts} />} exact />
-          <Route path="/contacts/contact" component={ContactPage} exact />
-          <Route path="/contacts/contact/edit" component={EditPage} />
+          <Route path="/contacts/:contactId" component={(props) => <ContactPage contacts={this.state.contacts} {...props} />} exact />
+          <Route path="/contacts/:contactId/edit" component={(props) => <EditPage contacts={this.state.contacts} {...props} />} />
           <Route path="/new" component={() => <NewPage addContact={this.addContact} />} />
         </Layout>
       </BrowserRouter>
