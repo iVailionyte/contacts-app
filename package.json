@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcobiedermann/contacts-app.git"
+    "url": "git+https://github.com/iVailionyte/contacts-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marcobiedermann/contacts-app/issues"
+    "url": "https://github.com/iVailionyte/contacts-app/issues"
   },
-  "homepage": "https://github.com/marcobiedermann/contacts-app#readme",
+  "homepage": "https://github.com/iVailionyte/contacts-app#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.54",
     "@babel/preset-env": "^7.0.0-beta.54",
