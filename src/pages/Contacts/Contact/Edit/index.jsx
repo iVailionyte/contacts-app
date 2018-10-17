@@ -20,7 +20,7 @@ class EditPage extends Component {
 
   submitHandler(event) {
     event.preventDefault();
-    console.log(this.state);
+    this.props.updateContact(this.props.match.params.contactId, this.state);
   }
 
   render() {
