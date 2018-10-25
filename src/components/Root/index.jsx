@@ -17,6 +17,7 @@ class Root extends Component {
     };
 
     this.addContact = this.addContact.bind(this);
+    this.updateContact = this.updateContact.bind(this);
   }
 
   addContact(newContact) {
@@ -25,8 +26,15 @@ class Root extends Component {
     });
   }
 
-  updateContact() {
-
+  updateContact(id, updatedInformation) {
+    this.setState((previousState) => ({
+      contacts: previousState.contacts.map(contact => {
+        if (contact.id === id) {
+          return updatedInformation;
+        }
+        return contact;
+      })
+    }))
   }
 
   deleteContact() {
@@ -39,8 +47,8 @@ class Root extends Component {
         <Layout>
           <Route path="/" component={IndexPage} exact />
           <Route path="/contacts" component={() => <ContactsPage contacts={this.state.contacts} />} exact />
-          <Route path="/contacts/contact" component={ContactPage} exact />
-          <Route path="/contacts/contact/edit" component={EditPage} />
+          <Route path="/contacts/:contactId" component={(props) => <ContactPage contacts={this.state.contacts} {...props} />} exact />
+          <Route path="/contacts/:contactId/edit" component={(props) => <EditPage contacts={this.state.contacts} updateContact={this.updateContact} {...props} />} />
           <Route path="/new" component={() => <NewPage addContact={this.addContact} />} />
         </Layout>
       </BrowserRouter>

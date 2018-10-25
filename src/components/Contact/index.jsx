@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Contact = ({
+  id,
   firstname,
   lastname,
   street,
@@ -14,7 +15,7 @@ const Contact = ({
 }) => (
   <div>
     <h1>
-      <Link to="/contacts/contact">
+      <Link to={`/contacts/${id}`}>
         {firstname}
         {' '}
         {lastname}
